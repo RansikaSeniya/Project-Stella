@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="bg-gray-100">
+
     <!-- Top Bar -->
-    <div class="bg-black text-white text-xs py-2">
+    <div class="bg-gray-800 text-white text-xs py-2">
         <div class="max-w-7xl mx-auto px-2 flex justify-between items-center">
             <div class="flex items-center gap-2">
                 <i class="fas fa-map-marker-alt text-xs text-teal-500"></i>
@@ -56,8 +57,7 @@
                         <input 
                             type="text" 
                             placeholder="What are you looking for?" 
-                            class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-teal-500"
-                        >
+                            class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-teal-500">
                     </div>
                 </div>
 
@@ -138,8 +138,27 @@
                 </div>
             </div>
 
-            </main>
-    </header>
+             <!-- Scroll Indicator - Center Bottom -->
+            <div class="absolute bottom-24 left-1/2 transform -translate-x-1/2 z-20">
+                <div class="w-12 h-12 bg-black rounded-full flex items-center justify-center cursor-pointer hover:bg-gray-800 transition-colors">
+                    <i class="fas fa-chevron-down text-white text-sm"></i>
+                </div>
+            </div>
+
+            <!-- Carousel Dots - Below Scroll Indicator -->
+            <div class="absolute bottom-12 left-1/2 transform -translate-x-1/2 z-20 flex gap-2">
+                <div class="w-2 h-2 bg-black rounded-full"></div>
+                <div class="w-2 h-2 bg-black rounded-full"></div>
+                <div class="w-2 h-2 bg-white rounded-full border border-black"></div>
+            </div>
+        </div>
+        
+        <!-- See All Link - Below Background Image -->
+        <div class="max-w-7xl mx-auto px-4 md:px-8 py-4 flex justify-end">
+            <a href="#" class="text-blue-400 hover:text-blue-500 text-sm font-medium transition-colors">See All</a>
+        </div>
+    </main>
+</header>
 </body>
 </html>
 
